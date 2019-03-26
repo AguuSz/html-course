@@ -252,3 +252,18 @@ h4{
     position: relative;
     padding-left: 5rem;
 }
+/* ------------------------------------------------------------------------------------------------- */
+/* Footer del sitio */
+.site-footer {
+    background-color: #333333;
+    margin: 0;
+}
+.contenedor-footer{
+    padding: 3rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+.copyright {
+    margin: 0;
+    color: white;
+}

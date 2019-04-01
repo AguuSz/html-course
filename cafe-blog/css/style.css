@@ -14,6 +14,7 @@ body {
 /* Globales */
 .contenedor {
     max-width: 1200px;
+    width: 95%;
     margin: 0 auto;
 }
 h1, h2, h3, h4 {
@@ -24,6 +25,7 @@ h1 {
 }
 h2 {
     font-size: 4rem;
+    line-height: 1.2;
 }
 h3 {
     font-size: 3.2rem;
@@ -40,6 +42,31 @@ img {
 }
 .no-margin {
     margin: 0;
+}
+/* ---------------------------------------------------------------------------------------- */
+/* Botones */
+.boton {
+    display: block;
+    text-align: center;
+    padding: 1rem 3rem;
+    margin: 2rem 0;
+    color: white;
+    text-decoration: none;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+@media (min-width: 768px) {
+    .boton {
+        display: inline-block;
+    }
+}
+.boton-primario {
+    background-color: black;
+}
+.boton-secundario {
+    background-color: #784d3c;
 }
 /* ---------------------------------------------------------------------------------------- */
 /* Header */
@@ -74,6 +101,8 @@ img {
     text-align: center;
     display: block;
     font-size: 1.8rem;
+    color: white;
+    text-decoration: none;
 }
 @media (min-width: 768px) {
     .navegacion a {
@@ -99,3 +128,74 @@ img {
 .texto-header p {
     font-size: 2.2rem;
 }
+/* ---------------------------------------------------------------------------------------- */
+/* Contenido principal */
+.contenido-principal {
+    display: flex;
+    flex-wrap: wrap;
+
+} /* Fin de .contenido-principal */
+.blog, .cursos {
+    flex: 0 0 100%;
+} /* Fin de .blog, .cursos */
+.cursos {
+    order: -1;
+} /* Fin de .cursos */
+@media (min-width: 768px) {
+    .contenido-principal {
+        justify-content: space-between;
+    }
+    .blog {
+        flex-basis: 66.6%;
+    } /* Fin de .blog */
+    .cursos {
+        flex-basis: calc(33.3% - 4rem);
+        order: 2;
+    } /* Fin de .cursos */
+}
+.entrada-blog {
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #e1e1e1;
+} /* Fin de .entrada-blog */
+.entrada-blog:last-of-type {
+    border: none;
+} /* Fin de .entrada-blog:last-of-type */
+/* ---------------------------------------------------------------------------------------- */
+/* Cursos sidebar */
+.cursos-lista {
+    padding: 0;
+    list-style: none;
+}
+.curso {
+    padding-bottom: 3rem;
+    border-bottom: 1px solid #e1e1e1;
+}
+.curso:last-of-type {
+    border: none;
+}
+.curso p {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+}
+.curso p span {
+    font-weight: 400;
+}
+/* ---------------------------------------------------------------------------------------- */
+/* Footer */
+.site-footer {
+    background-color: black;
+    padding: 3rem;
+    margin-top: 4rem;
+}
+.site-footer p {
+    color: white;
+    font-size: 4rem;
+    font-weight: 400;
+    font-family: 'PT Sans', sans-serif;
+    text-align: center;
+}
+.site-footer p span {
+    font-weight: 700;
+}
+

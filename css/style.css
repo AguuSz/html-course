@@ -1,0 +1,46 @@
+html {
+
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+h1, h2, h3, h4 {
+    font-family: 'Nunito', sans-serif;
+    color: white;
+}
+body {
+    background-image: url(../banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 58rem;
+}
+.centrar-texto {
+    text-align: center;
+}
+.titulo {
+    margin-top: 10rem;
+    font-size: 10rem;
+}
+.contenedor {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.listaEnlaces {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin-top: 20rem;
+}
+.enlace {
+    font-family: 'Dosis', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    text-decoration: none;
+}
+.enlace:hover {
+    color: #00FF5A;
+}

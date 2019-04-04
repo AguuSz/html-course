@@ -1,0 +1,70 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* Reset para REMs - 62.5% = 10 px de 16px */
+}
+*, *: before, *after {
+    box-sizing: inherit;
+}
+body {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+/* ---------------------------------------------------------------------------------------- */
+/* Globales */
+img {
+    max-width: 100%;
+}
+.contenedor {
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+h1 {
+    font-size: 3.6rem;
+}
+h2 {
+    font-size: 3.2rem;
+}
+h3 {
+    font-size: 2.8rem;
+}
+h4 {
+    font-size: 2.4rem;
+}
+
+/* ---------------------------------------------------------------------------------------- */
+/* Utilidades */
+.centrar-texto {
+    text-align: center;
+}
+
+/* ---------------------------------------------------------------------------------------- */
+/* Header */
+.site-header {
+    padding: 20px 0;
+}
+/* ---------------------------------------------------------------------------------------- */
+/* Navegacion */
+.barra {
+    background-color: #DB008D;
+}
+.navegacion-principal a {
+    color: white;
+    text-decoration: none;
+    font-size: 2.2rem;
+    display: block;
+    text-align: center;
+    padding: 2rem;
+}
+@media (min-width: 768px) {
+    .navegacion-principal a {
+        display: inline-block;
+        padding: 1rem;
+        margin-right: 2rem;
+    }
+}
+.navegacion-principal a:hover {
+    background-color: #00b8e4;
+}

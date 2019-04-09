@@ -39,12 +39,26 @@ p {
 }
 /* ---------------------------------------------------------------------------------------- */
 /* Mobile-menu */
+.barra {
+    overflow: hidden;
+}
 .mobile-menu {
     color: white;
     font-size: 2rem;
     text-align: center;
     display: block;
     padding: 2rem 0;
+}
+.navegacion-principal {
+    max-height: 0;
+}
+.site-header {
+    padding: 20px 0;
+}
+@media (min-width: 768px) {
+    .mobile-menu, .cerrar {
+        display: none!important;
+    }
 }
 /* ---------------------------------------------------------------------------------------- */
 /* Utilidades */
@@ -66,15 +80,7 @@ p {
 }
 /* ---------------------------------------------------------------------------------------- */
 /* Header */
-.barra {
-    overflow: hidden;
-}
-.site-header {
-    padding: 20px 0;
-}
-.navegacion-principal {
-    max-height: 0;
-}
+
 
 /* ---------------------------------------------------------------------------------------- */
 /* Navegacion */
